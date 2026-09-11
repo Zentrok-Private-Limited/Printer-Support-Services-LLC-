@@ -1,0 +1,83 @@
+
+import Hero from "@/components/Hero";
+import Services from "@/components/Services";
+import Contact from "@/components/Contact";
+
+import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import WhoWeHelp from "@/components/WhoWeHelp";
+import WhyChooseUs from "@/components/WhyUs";
+import CommonIssues from "@/components/CommonIssues";
+
+
+export default function Home() {
+  return (
+    <main className="bg-gray-50 min-h-screen">
+      
+      <Hero />
+      {/* Main Content About Section */}
+      <main className="max-w-7xl mx-auto px-8 mt-12 lg:mt-24 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        
+        {/* Left Text Column */}
+        <div className="space-y-8">
+          <h1 className="text-2xl lg:text-4xl font-bold tracking-tight text-slate-900 leading-tight">
+            About Printer Support Services LLC <br /> Solutions
+          </h1>
+          
+          <p className="text-sm lg:text-lg text-gray-500 max-w-md leading-relaxed">
+            Printer Support Services LLC provides expert printer support, troubleshooting, installation, and IP network configuration services for residential customers, home offices, and businesses across the United States. Whether you need help setting up a new printer, resolving connectivity issues, or configuring your network, our technicians are ready to assist.
+          </p>
+
+          <Link href="/About" className="px-10 py-3 border-2 border-gray-900 text-white rounded-lg text-lg font-medium bg-gray-900 hover:text-white transition-all duration-300">
+            Learn More
+          </Link>
+        </div>
+
+        {/* Right Image Column */}
+        <div className="relative w-full aspect-4/3 rounded-3xl overflow-hidden shadow-2xl">
+          <Image
+            src="/img1.png"
+            alt="HP Printer Technician at work"
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
+      </main>
+
+      {/* Main Commitment Section */}
+      <main className="max-w-7xl mx-auto px-8 mt-12 lg:mt-30 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        
+        {/* Left Text Column */}
+        <div className="relative w-full h-full rounded-3xl">
+          <Image
+            src="/img2.png"
+            alt="HP Printer Technician at work"
+            height={500}
+            width={400}
+            className="object-contain"
+          />
+        </div>
+
+        {/* Right Image Column */}
+        <div className="space-y-8">
+          <h1 className="text-2xl lg:text-4xl font-bold tracking-tight text-slate-900 leading-tight">
+            Our Commitment
+          </h1>
+          
+          <p className="text-sm lg:text-lg text-gray-500 max-w-md leading-relaxed">
+            We are committed to delivering reliable printing solutions backed by expert service and honest support. From providing high-quality printers to offering fast and efficient repair services, we prioritize performance, transparency, and customer satisfaction. Our goal is to ensure every client experiences seamless printing with minimal downtime and maximum value.
+          </p>
+        </div>
+        
+      </main>
+      <Services />
+      <WhoWeHelp/>
+      <WhyChooseUs/>
+      <CommonIssues/>
+      <Contact />
+      
+    </main>
+  );
+}

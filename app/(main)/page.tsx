@@ -22,7 +22,7 @@ export default function Home() {
         {/* Left Text Column */}
         <div className="space-y-8">
           <h1 className="text-2xl lg:text-4xl font-bold tracking-tight text-slate-900 leading-tight">
-            About Printer Support Services LLC <br /> Solutions
+            About Printer Support Services LLC <br />
           </h1>
           
           <p className="text-sm lg:text-lg text-gray-500 max-w-md leading-relaxed">

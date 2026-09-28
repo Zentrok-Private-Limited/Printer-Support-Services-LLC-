@@ -14,8 +14,8 @@ export default function Footer() {
               <MapPin className="w-4 h-4 mt-1 text-blue-500 shrink-0" />
               <p>
                 Printer Support Services LLC<br />
-                30 N GOULD ST STER,<br />
-                SHERIDAN WY, 82801
+                212 N. 2nd St. STE 100,<br />
+                 Richmond, KY 40475
               </p>
             </div>
             <div>
